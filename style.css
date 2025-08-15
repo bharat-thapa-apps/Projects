@@ -1,0 +1,77 @@
+body {
+    font-family: Arial;
+    background-color: rgb(24, 22, 22);
+    color: white;
+}
+
+main > *{
+    margin: 30px 0;
+}
+
+.move-selection {
+    display: flex;
+    /* background-color: rgb(0, 0, 0); */
+    width: 400px;
+    justify-content: space-between;
+}
+
+.move-selection > * {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: solid rgb(228, 228, 228) 3px;
+    background-color: transparent;
+}
+
+.buttons-img {
+    height: 50px;
+}
+
+.moves-info-img {
+    height: 50px;
+}
+
+.moves-info-wrapper {
+    display: flex;
+    width: 210px;
+    height: 60px;
+    justify-content: space-between;
+}
+
+.result {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.user-interactions button {
+    height: 35px;
+    width: 150px;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.autoplay-button {
+    color: white;
+    background-color: red;
+}
+
+.disabled {
+    opacity: 0.5;
+}
+
+.autoplaying {
+    background-color: green;
+}
+
+.note {
+    color:  rgb(31, 224, 31);
+}
+
+.reset-prompt {
+    margin-top: 16px; 
+}
+.reset-prompt button {
+    width: 60px;
+    height: 32px;
+}

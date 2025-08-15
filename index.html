@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Rock Paper Scissors</h1>
+
+  <main>
+    <div class="js-move-selection move-selection">
+      <button class="js-rock js-move-buttons" data-cat="moves" data-move="rock">
+        <img src="images/rock.png" alt="move-rock" class="buttons-img">
+      </button>
+      <button class="js-paper js-move-buttons" data-cat="moves" data-move="paper">
+        <img src="images/paper.png" alt="move-paper" class="buttons-img">
+      </button>
+      <button class="js-scissors js-move-buttons" data-cat="moves" data-move="scissors">
+        <img src="images/scissors.png" alt="move-scissors" class="buttons-img">
+      </button>
+    </div>
+
+    <div class="js-result result">&nbsp;</div>
+
+    <div class="js-moves-info moves-info-wrapper">
+      &nbsp;
+    </div>
+
+    <div class="js-score-card">&nbsp;</div>
+
+    <div class="user-interactions">
+      <button class="js-reset-score reset-button">Reset Score</button>
+      <button class="js-autoplay autoplay-button">Auto Play</button>
+      <div class="js-reset-score-prompt reset-prompt">
+      </div>
+    </div>
+    <div class="note">
+      <p class="note-1">Press 'ctrl + r' to reset Score</p>
+      <p class="note-2">Press 'spacebar' auto playing game</p>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
