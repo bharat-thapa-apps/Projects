@@ -10,28 +10,39 @@ const getRandomMove = () => {
   return moves[randomIndex];
 };
 
-const userWinCon = [
-  ['rock', 'scissors'],
-  ['paper', 'rock'],
-  ['scissors', 'paper'],
-];
-const userLoseCon = [
-  ['rock', 'paper'],
-  ['paper', 'scissors'],
-  ['scissors', 'rock'],
-];
+// const userWinCon = [
+//   ['rock', 'scissors'],
+//   ['paper', 'rock'],
+//   ['scissors', 'paper'],
+// ];
+// const userLoseCon = [
+//   ['rock', 'paper'],
+//   ['paper', 'scissors'],
+//   ['scissors', 'rock'],
+// ];
 
-const getResult = (userMove, computerMove) => {
-  if (userMove === computerMove) return 'tie';
-  else if (
-    userWinCon.find((con) => con[0] === userMove && con[1] === computerMove)
-  ) {
-    return 'win';
-  } else if (
-    userLoseCon.find((con) => con[0] === userMove && con[1] === computerMove)
-  ) {
-    return 'lose';
-  }
+// const getResult = (userMove, computerMove) => {
+//   if (userMove === computerMove) return 'tie';
+//   else if (
+//     userWinCon.find((con) => con[0] === userMove && con[1] === computerMove)
+//   ) {
+//     return 'win';
+//   } else if (
+//     userLoseCon.find((con) => con[0] === userMove && con[1] === computerMove)
+//   ) {
+//     return 'lose';
+//   }
+// };
+
+const winConditions = {
+  rock: 'scissors',
+  paper: 'rock',
+  scissors: 'paper',
+};
+
+const getResult = (playerMove, computerMove) => {
+  if (playerMove === computerMove) return 'tie';
+  return winConditions[playerMove] === computerMove ? 'win' : 'lose';
 };
 
 const resultElement = document.querySelector('.js-result');
